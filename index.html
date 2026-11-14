@@ -3,69 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Social Earning Task Instructions</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             background: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
             margin: 0;
-            padding: 15px;
+            padding: 20px;
+            color: #333;
         }
 
         .container {
+            max-width: 600px;
+            margin: 30px auto;
             background: white;
-            padding: 30px;
+            padding: 25px;
             border-radius: 10px;
-            width: 85%;
-            max-width: 400px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         h2 {
             text-align: center;
+            font-size: 21px;
+            line-height: 1.5;
         }
 
-        label {
-            display: block;
-            margin-top: 15px;
-        }
-
-        input, select {
-            width: 100%;
-            padding: 12px;
-            margin-top: 8px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-            width: 100%;
-            padding: 14px;
+        h3 {
             margin-top: 25px;
+            color: #1877f2;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        .link-button {
+            display: block;
+            text-align: center;
             background: #1877f2;
             color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
+            padding: 14px;
+            border-radius: 6px;
+            text-decoration: none;
             font-weight: bold;
-            cursor: pointer;
+            margin: 15px 0;
         }
 
-        button:hover {
-            background: #0d5fc4;
+        .proof {
+            background: #f0f6ff;
+            padding: 15px;
+            border-left: 4px solid #1877f2;
+            border-radius: 5px;
+            margin-top: 25px;
         }
 
         .notice {
-            font-size: 12px;
+            font-size: 13px;
             color: #666;
-            margin-top: 15px;
-            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -74,58 +70,48 @@
 
 <div class="container">
 
-    <h2>Registration Form</h2>
+    <h2>THESE ARE THE FULL INSTRUCTIONS FOR YOUR SOCIAL EARNING TASK</h2>
 
-    <form id="registrationForm">
+    <h3>1. Download & Register</h3>
 
-        <label for="name">Name</label>
-        <input
-            type="text"
-            id="name"
-            placeholder="Enter your name"
-            required
-        >
+    <p>
+        Download the app through the link below and register using my
+        referral code: <strong>CP29</strong>
+    </p>
 
-        <label for="username">Username</label>
-        <input
-            type="text"
-            id="username"
-            placeholder="Choose a username"
-            required
-        >
+    <a class="link-button"
+       href="https://links.rexafrica.com/register?referral=CP29"
+       target="_blank">
+        Download & Register
+    </a>
 
-        <label for="gender">Gender</label>
-        <select id="gender" required>
-            <option value="">Select gender</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Prefer not to say">Prefer not to say</option>
-        </select>
+    <h3>2. Fund Your Rex Account</h3>
 
-        <button type="submit">
-            Continue to SILive
-        </button>
+    <p>
+        On your homepage, click <strong>Add Money</strong> and transfer
+        ₦2,000 to the Rex account number displayed there
+        (this is your newly assigned Rex account number).
+    </p>
 
-    </form>
+    <p>
+        Once the ₦2,000 reflects in your Rex account, withdraw it
+        immediately to your regular bank account.
+    </p>
+
+    <div class="proof">
+        <strong>PROOF OF WORK:</strong>
+        <p>
+            Upload a screenshot showing that you successfully added
+            ₦2,000 to your Rex account.
+        </p>
+    </div>
 
     <p class="notice">
-        This is a demonstration form. Your entries are not saved
-        or transmitted. Continuing will take you to SILive.com.
+        Before transferring money, verify the account details and
+        confirm that you understand the transaction.
     </p>
 
 </div>
-
-<script>
-    document.getElementById("registrationForm")
-        .addEventListener("submit", function(event) {
-
-            event.preventDefault();
-
-            window.location.href =
-            "https://www.silive.com/?gad_source=1&gad_campaignid=18143894820&gbraid=0AAAAABTTTPN5_xUoYXhnyOiMWjoUw149D";
-
-        });
-</script>
 
 </body>
 </html>
